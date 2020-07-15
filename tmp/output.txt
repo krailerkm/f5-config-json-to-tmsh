@@ -1,0 +1,25 @@
+create ltm pool /KSC/bz-ti-mssql12-1-snmp members { /KSC/10.10.16.161:162 { address 10.10.16.161 } } monitor /Common/udp
+create ltm pool /KSC/bz-ti-mssql12-1-snmptrap members { /KSC/10.10.16.161:162 { address 10.10.16.161 } } monitor /Common/udp
+create ltm pool /KSC/bz-ti-rh6-1-ftp load-balancing-mode least-connections-node members { /KSC/10.10.16.31:21 { address 10.10.16.31 } } monitor /KSC/check-ftps-l4
+create ltm pool /KSC/bz-ti-rh6-1-http load-balancing-mode least-connections-node members { /KSC/10.10.16.31:80 { address 10.10.16.31 } } monitor /KSC/check-http
+create ltm pool /KSC/bz-ti-rh6-1-https load-balancing-mode least-connections-node members { /KSC/10.10.16.31:443 { address 10.10.16.31 } } monitor /KSC/check_https
+create ltm pool /KSC/bz-ti-rh6-1-plesk load-balancing-mode least-connections-node members { /KSC/10.10.16.31:8443 { address 10.10.16.31 } } monitor /KSC/check_plesk
+create ltm pool /KSC/bz-ti-rh6-1-plesk-ins load-balancing-mode least-connections-node members { /KSC/10.10.16.31:8447 { address 10.10.16.31 } } monitor /Common/gateway_icmp
+create ltm pool /KSC/bz-ti-rh6-1-snmp members { /KSC/10.10.16.31:161 { address 10.10.16.31 } } monitor /Common/udp
+create ltm pool /KSC/bz-ti-rh6-1-snmptrap members { /KSC/10.10.16.31:162 { address 10.10.16.31 } } monitor /Common/udp
+create ltm pool /KSC/bz-ti-rh6-1-ssh load-balancing-mode least-connections-node members { /KSC/10.10.16.31:22 { address 10.10.16.31 } } monitor /KSC/check_ssh
+create ltm pool /KSC/bz-ti-win12-1-ftp load-balancing-mode least-connections-node members { /KSC/10.10.16.21:21 { address 10.10.16.21 } } monitor /KSC/check-ftps-l4
+create ltm pool /KSC/bz-ti-win12-1-http load-balancing-mode least-connections-node members { /KSC/10.10.16.21:80 { address 10.10.16.21 } } monitor /KSC/check-http
+create ltm pool /KSC/bz-ti-win12-1-https load-balancing-mode least-connections-node members { /KSC/10.10.16.21:443 { address 10.10.16.21 } } monitor /KSC/check_https
+create ltm pool /KSC/bz-ti-win12-1-plesk load-balancing-mode least-connections-node members { /KSC/10.10.16.21:8443 { address 10.10.16.21 } } monitor /KSC/check_plesk
+create ltm pool /KSC/bz-ti-win12-1-plesk-ins load-balancing-mode least-connections-node members { /KSC/10.10.16.21:8447 { address 10.10.16.21 } } monitor /Common/gateway_icmp
+create ltm pool /KSC/bz-ti-win12-1-rdp load-balancing-mode least-connections-node members { /KSC/10.10.16.21:3389 { address 10.10.16.21 } } monitor /KSC/check_rdp
+create ltm pool /KSC/bz-ti-win12-1-snmp members { /KSC/10.10.16.21:161 { address 10.10.16.21 } } monitor /Common/udp
+create ltm pool /KSC/bz-ti-win12-1-snmptrap members { /KSC/10.10.16.21:162 { address 10.10.16.21 } } monitor /Common/udp
+create ltm pool /KSC/bz-win12-1-dsm load-balancing-mode least-connections-node members { /KSC/10.10.16.1:4118 { address 10.10.16.1 } } monitor /KSC/check_dsm4118
+create ltm pool /KSC/bz-win12-1-ftp load-balancing-mode least-connections-node members { /KSC/10.10.16.1:21 { address 10.10.16.1 } } monitor /KSC/check-ftps-l4
+create ltm pool /KSC/bz-win12-1-http load-balancing-mode least-connections-node members { /KSC/10.10.16.1:80 { address 10.10.16.1 } } monitor /KSC/check-http
+create ltm pool /KSC/bz-win12-1-https load-balancing-mode least-connections-node members { /KSC/10.10.16.1:443 { address 10.10.16.1 } } monitor /KSC/check_https
+create ltm pool /KSC/bz-win12-1-plesk load-balancing-mode least-connections-node members { /KSC/10.10.16.1:8443 { address 10.10.16.1 } } monitor /KSC/check_plesk
+create ltm pool /KSC/bz-win12-1-plesk-ins load-balancing-mode least-connections-node members { /KSC/10.10.16.1:8447 { address 10.10.16.1 } } monitor /Common/gateway_icmp
+create ltm pool /KSC/bz-win12-1-rdp load-balancing-mode least-connections-node members { /KSC/10.10.16.1:3389 { address 10.10.16.1 } } monitor /KSC/check_rdp
