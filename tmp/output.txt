@@ -1,1 +1,106 @@
- sys crypto ca-bundle-manager /KSC/Zero-DV-ksccoth include-bundle { /KSC/Zero-STAR-KSCCOTH /KSC/ZeroSSL-DV-6c55abdbd00792c79d070cd8119ed6bf } trusted-ca-bundle /KSC/USERTrust-Root-01fd6d30fca3ca51a81bbc640e35032d
+modify ltm snat-translation /KSC/203.107.129.13 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.14 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.15 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.18 traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.129.19 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.20 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.21 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.22 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.23 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.24 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.25 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.26 address 203.107.129.26 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.129.29 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.30 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.141 traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.129.142 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.143 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.129.146 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.129.147 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.131.195 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.198 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.201 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.202 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.203 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.204 traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.131.205 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.206 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.209 traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.131.213 traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.131.214 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.131.215 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.131.216 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.217 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.220 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.222 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.131.224 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.2 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.137.3 traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.4 traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.5 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.137.6 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.137.13 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.137.27 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.137.28 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.137.29 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.30 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.35 ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.107.137.41 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.42 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.52 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.61 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.137.62 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.166.1 inherited-traffic-group true ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 60
+modify ltm snat-translation /KSC/203.107.166.2 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.166.3 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.166.4 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.107.166.5 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.5.1 ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.5.2 inherited-traffic-group true ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.5.3 inherited-traffic-group true ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.33.1 ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.33.2 inherited-traffic-group true ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.33.6 ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.33.44 ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.33.54 inherited-traffic-group true ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.33.80 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.33.81 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.33.82 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.33.90 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.35.129 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.35.131 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.35.132 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.35.141 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.35.142 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.35.146 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.35.147 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.155.35.151 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.35.161 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.35.177 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.35.186 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.35.191 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.155.35.192 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.188.8.1 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.1 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.2 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.3 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.4 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.5 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.6 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.7 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.195.111.8 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.195.111.9 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.195.111.10 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.15 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/203.195.111.22 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/203.209.115.5 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/2405:A000:9000:1A::15 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/2405:A000:9000:1A::16 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/2405:A000:9000:1A::17 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/2405:A000:9000:1A::18 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/2405:A000:9000:1A::19 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/2405:a000:9000:12:203:155:5:2 inherited-traffic-group true ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/2405:a000:9000:12:203:188:8:1 inherited-traffic-group true ip-idle-timeout 150 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/2405:a000:9000:13:10:10:10:115 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
+modify ltm snat-translation /KSC/2405:a000:9000:13:203:107:131:199 inherited-traffic-group true traffic-group /Common/traffic-group-1
+modify ltm snat-translation /KSC/2405:a000:9000:13:203:107:131:218 inherited-traffic-group true ip-idle-timeout 15 tcp-idle-timeout 300 traffic-group /Common/traffic-group-1 udp-idle-timeout 30
